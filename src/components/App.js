@@ -44,6 +44,8 @@ import Users from "./Admin/Pages/Users";
 import ReviwernotLogedNavBar from "./Reviewer/ReviwernotLogedNavBar";
 import AdminLogin from "./Admin/Login/AdminLogin";
 import EditorLogin from "./EditorWorkspace/EditorLogin";
+import TopSpeakers from "./HeroSection/TopSpeakers";
+import HomeNews from "./HeroSection/HomeNews";
 
 const App = () => {
   return (
@@ -91,7 +93,7 @@ const App = () => {
             <ReviewerRegister />
           </Route>
           <Route path="/reviewer/login">
-            <ReviwernotLogedNavBar />
+            <Header />
             <ReviewerLogin />
           </Route>
           <Route path="/reviewer/dashboard/:email">
@@ -103,6 +105,7 @@ const App = () => {
             <ViewResearches />
           </Route>
           <Route exact path="/sign-up">
+            <Header />
             <UserRegistrationButton />
           </Route>
           <Route exact path="/editor/addSpeaker">
@@ -145,7 +148,7 @@ const App = () => {
             <ResearcherLogin />
           </Route>
           <Route exact path="/user/wsconductor/login">
-            <LUserNavbar />
+            <UserNavBar />
             <WsConLogin />
           </Route>
           <Route exact path="/admin/stats">
@@ -153,7 +156,7 @@ const App = () => {
             <Stats />
           </Route>
           <Route exact path="/attendee/dashboard">
-            <UserNavBar />
+            <LUserNavbar />
             <AttendeeDashboard />
           </Route>
           <Route exact path="/editor/editNews/:id" component={EditNews} />
@@ -185,6 +188,14 @@ const App = () => {
           <Route exact path="/editor/login">
             <Header />
             <EditorLogin />
+          </Route>
+          <Route exact path="/home/speakers">
+            <Header />
+            <TopSpeakers />
+          </Route>
+          <Route exact path="/home/news">
+            <Header />
+            <HomeNews />
           </Route>
         </Switch>
       </div>

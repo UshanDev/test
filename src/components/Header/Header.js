@@ -52,7 +52,7 @@ const Header = () => {
               </li>
               <li className="nav--itemheader">
                 <Link
-                  to="/news"
+                  to="/home/news"
                   className="nav-linksheader"
                   onClick={closeMobileMenu}
                 >
@@ -61,7 +61,7 @@ const Header = () => {
               </li>
               <li className="nav--itemheader">
                 <Link
-                  to="/articles"
+                  to="/home/speakers"
                   className="nav-linksheader"
                   onClick={closeMobileMenu}
                 >

@@ -24,7 +24,7 @@ const UserLoginButton = () => {
               </td>
               <td>
                 <div>
-                  <Link to="/">
+                  <Link to="/reviewer/login">
                     <button className="addbtn addbtn_Effect">
                       Reviewer Login
                     </button>

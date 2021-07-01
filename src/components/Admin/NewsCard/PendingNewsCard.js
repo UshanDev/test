@@ -23,8 +23,8 @@ const PendingNewsCard = ({ title, description, imgURL, id }) => {
       });
   };
   return (
-    <div className="col">
-      <div className="card h-100" style={{ borderRadius: "20px" }}>
+    <div className="">
+      <div className="card h-100 w-200" style={{ borderRadius: "20px" }}>
         <img
           src={imgURL}
           className="card-img-top"
@@ -37,7 +37,7 @@ const PendingNewsCard = ({ title, description, imgURL, id }) => {
           }}
         />
         <div className="card-body">
-          <h5 className="card-title">{title}</h5>
+          <h3 className="card-title">{title}</h3>
           <p className="card-text" style={{ color: "black" }}>
             {description}
           </p>
@@ -51,7 +51,7 @@ const PendingNewsCard = ({ title, description, imgURL, id }) => {
                 Approve
               </button>
             ) : (
-              <button>Approved</button>
+              <button className="btn btn-danger">Approved</button>
             )}
           </center>
         </div>

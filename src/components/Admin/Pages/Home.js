@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -19,8 +20,17 @@ function Home() {
                   className="container"
                   style={{ display: "inline-block", textAlign: "center" }}
                 >
-                  <h1 className="card-text">View Pending Posts</h1>
+                  <h1 className="card-text">Pending Posts</h1>
                   <i className="fas fa-users fa-2x"></i>
+                  <br />
+                  <Link to="/admin/news">
+                    <button
+                      type="button"
+                      className="btn btn-outline-dark btn-lg"
+                    >
+                      View
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -32,8 +42,17 @@ function Home() {
                   className="container"
                   style={{ display: "inline-block", textAlign: "center" }}
                 >
-                  <h1 className="card-text">View Approved Posts</h1>
-                  <i className="fas fa-user-friends fa-2x"></i>
+                  <h1 className="card-text">Approved Posts</h1>
+                  <i className="fas fa-user-check fa-2x"></i>
+                  <br />
+                  <Link to="/admin/approvednews">
+                    <button
+                      type="button"
+                      className="btn btn-outline-dark btn-lg"
+                    >
+                      View
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -46,7 +65,16 @@ function Home() {
                   style={{ display: "inline-block", textAlign: "center" }}
                 >
                   <h1 className="card-text">Add Users</h1>
-                  <i className="fas fa-laptop-house fa-2x"></i>
+                  <i className="fas fa-user-plus fa-2x"></i>
+                  <br />
+                  <Link to="/admin/users">
+                    <button
+                      type="button"
+                      className="btn btn-outline-dark btn-lg"
+                    >
+                      View
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -58,8 +86,17 @@ function Home() {
                   className="container"
                   style={{ display: "inline-block", textAlign: "center" }}
                 >
-                  <h1 className="card-text">View Keynote Speakers</h1>
-                  <i className="fas fa-paperclip fa-2x"></i>
+                  <h1 className="card-text">Keynote Speakers</h1>
+                  <i class="fas fa-user-shield fa-2x"></i>
+                  <br />
+                  <Link to="/admin/speakers">
+                    <button
+                      type="button"
+                      className="btn btn-outline-dark btn-lg"
+                    >
+                      View
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -74,8 +111,17 @@ function Home() {
                   className="container"
                   style={{ display: "inline-block", textAlign: "center" }}
                 >
-                  <h1 className="card-text">View Statistics</h1>
-                  <i className="fas fa-paperclip fa-2x"></i>
+                  <h1 className="card-text fs-6">View Statistics</h1>
+                  <i class="fas fa-chart-line fa-2x"></i>
+                  <br />
+                  <Link to="/admin/stats">
+                    <button
+                      type="button"
+                      className="btn btn-outline-dark btn-lg"
+                    >
+                      View
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
